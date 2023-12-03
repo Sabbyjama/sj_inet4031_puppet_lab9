@@ -20,7 +20,7 @@ service { 'apache2':
   require => [Package['apache2'], Package['php']]
 }
 
-package { 'libapache2-mod-php':
+package { 'libapache2-php':
   ensure => installed,
   require => Package['apache2'],
 }
